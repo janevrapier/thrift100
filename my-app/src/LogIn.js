@@ -45,7 +45,7 @@ const Login = (props) => {
         <input className={'inputButton'} type="button" onClick={onButtonClick} value={'Log in'} />
       </div>
 
-      <button onClick={() => {navigate('/')}}>Hello</button>
+      <button onClick={() => {navigate('/')}}>Home</button>
     </div>
   )
 }

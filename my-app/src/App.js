@@ -2,22 +2,23 @@ import React from 'react';
 import backgroundImage from './THRFT.jpg';
 import './App.css';
 import LoginPage from './LogIn.js'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import  { useNavigate } from 'react-router-dom'
-// test
+import { createBrowserRouter, RouterProvider, Link, useNavigate } from 'react-router-dom';
+
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <div>Hello world!<button onClick={() => {
-       // Redirect to the dashboard after login
-    }}>Hello</button></div>,
+    path: '/',
+    element: (
+      <div>
+        Hello world!
+        <Link to="/login">
+          <button>Log in</button>
+        </Link>
+      </div>
+    ),
   },
   {
-    path: "/login",
+    path: '/login',
     element: <LoginPage />,
   },
 ]);
