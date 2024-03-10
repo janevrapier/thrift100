@@ -10,7 +10,8 @@ const router = createBrowserRouter([
     path: '/',
     element: (
       <div>
-        Hello world!
+        Welcome to THRFT100! <br></br>
+        Your new home for thrifting on campus! <br></br>
         <Link to="/login">
           <button>Log in</button>
         </Link>

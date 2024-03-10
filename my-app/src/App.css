@@ -1,7 +1,21 @@
 .App {
   text-align: center;
 }
+body {
+  background-color: pink;
+  color: hotpink;
+  font-weight: bold;
+  font-size: xx-large;
+}
 
+.button {
+  font-weight: bold;
+}
+
+.myElement {
+  font-weight: bold;
+  font-size: x-large;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
