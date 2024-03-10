@@ -12,7 +12,6 @@ const router = createBrowserRouter([
   element: (
     <div className="main_container">
   <div className="content">
-    {/* Left side content */}
     <div className="slogan">secure, campus-based online reselling</div>
     <div className="thrift-heading">THRFT</div>
     <div className="hundred-heading">100</div>
