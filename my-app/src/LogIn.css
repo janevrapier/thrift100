@@ -1,38 +1,19 @@
 .App {
   text-align: center;
 }
-body {
-  background-color: pink;
-  color: hotpink;
-  font-weight: bold;
-  font-size: xx-large;
-}
 
-
-.button {
+ .continueButton {
   font-weight: bold;
-  border-radius: 20px; /* Adjust the border-radius to make it more oval */
-  background-color: red; /* Set the background color to red */
-  color: white; /* Set the text color to contrast with the red background */
-  padding: 10px 80px; /* Adjust the padding for better appearance */
-  cursor: pointer; /* Add a pointer cursor for better user experience */
+  border: 0px;
+  border-radius: 20px; 
+  background-color: #f83c54; 
+  color: white; 
+  padding: 10px 80px; 
+  cursor: pointer; 
  }
  
  
- .button:hover {
-  background-color: darkred; /* Change the background color on hover if desired */
- }
- .homeButton {
-  font-weight: bold;
-  border-radius: 20px; /* Adjust the border-radius to make it more oval */
-  background-color: red; /* Set the background color to red */
-  color: white; /* Set the text color to contrast with the red background */
-  padding: 10px 80px; /* Adjust the padding for better appearance */
-  cursor: pointer; /* Add a pointer cursor for better user experience */
- }
- 
- 
- .homeButton:hover {
+ .continueButton:hover {
   background-color: darkred; /* Change the background color on hover if desired */
  }
  
@@ -46,32 +27,7 @@ body {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.App{
-  background-image: url('./THRFT.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .signIn {
   /* Add or modify styles for the Sign In button */
   position: absolute;
@@ -92,7 +48,7 @@ body {
 }
 
 .welcomeHeading {
-  font-family: 'Poppins, sans-serif';
+  font-family: 'Poppins',sans-serif;
   font-size: 16px; /* Corrected value */
   color: red;
   justify-content: center; 
@@ -100,17 +56,17 @@ body {
 }
 .mainTitle {
   font-family: 'Poppins', sans-serif;
-  font-size: 4rem; /* Adjust the size as needed */
+  font-size: 100px; /* Adjust the size as needed */
   color: black;
   font-style: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   justify-content: center; 
 }
 .emailMessage {
   justify-content: center; 
   font-family: 'Poppins', sans-serif; /* Add your preferred font */
   font-size: 18px; /* Adjust the font size as needed */
-  font-style: italic; /* Add italic style if desired */
+   /* Add italic style if desired */
   color: #333; /* Adjust the text color as needed */
   margin-bottom: 10px; /* Add some bottom margin for spacing */
 
@@ -120,13 +76,17 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
+.errorLabel {
+  font-size: 14px; /* Adjust the font size as needed */
+  color: red; /* Change the color if desired */
+}
 .inputBox{
-  border-radius: 10px;
+  border-radius: 150px;
   width:300px;
   height: 20px;
   padding: 10px;
   font-size: 16px;
-
+  border: 10px  grey;
 }
+
 

@@ -1,54 +1,54 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { redirect } from "react-router-dom";
-import reportWebVitals from './reportWebVitals';
-import App from './App';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './LogIn.css';
-
+import ComingSoon from './coming_soon';
 
 const Login = (props) => {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [emailError, setEmailError] = useState('')
-  const [passwordError, setPasswordError] = useState('')
+  const [email, setEmail] = useState('');
+  const [emailError, setEmailError] = useState('');
 
   const navigate = useNavigate();
 
-  const onButtonClick = () => {
-    // You'll update this function later...
-  }
+  const onContinueClick = () => {
+    if (!email) {
+      setEmailError('Email is required');
+    } else if (!email.endsWith('@queensu.ca')) {
+      setEmailError('Please enter a valid university email ending with @queensu.ca');
+    } else {
+      setEmailError('');
+    }
+  
+    // If validation passes, navigate to the next page
+    if (email.endsWith('.queensu.ca')) {
+      navigate('/coming_soon'); 
+    }
+  };
 
   return (
     <div className={'mainContainer'}>
       <div className={'titleContainer'}>
-      <h2 className = 'welcomeHeading'>
-        secure, campus-based online reselling
-        </h2>
-        <h1 className="mainTitle">THRFT100</h1>
-        <div className = "emailMessage"> Enter your university email address</div>
+        <h2 className='welcomeHeading'>secure, campus-based online reselling</h2>
+        <h1 className="mainTitle">THRFT 100</h1>
+        <div className="emailMessage">Enter your university email address</div>
       </div>
       <br />
       <div className={'inputContainer'}>
         <input
           value={email}
-          placeholder="name@queensu.ca "
+          placeholder="name@queensu.ca"
           onChange={(ev) => setEmail(ev.target.value)}
           className={'inputBox'}
         />
+        
+      </div>
+      <br />
+      <div className={'errorContainer'}>
         <label className="errorLabel">{emailError}</label>
       </div>
-      <br />
-      <div className={'inputContainer'}>
-        <label className="errorLabel">{passwordError}</label>
-      </div>
-      <br />
-      <div className={'inputContainer'}>
-        <input className={'button'} type="button" onClick={onButtonClick} value={'Log in'} />
-      </div>
 
-      <input className={'homeButton'} type="button" onClick={() => {navigate('/')}} value="Home" />
+      <input className={'continueButton'} type="button" onClick={onContinueClick} value="Continue" />
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

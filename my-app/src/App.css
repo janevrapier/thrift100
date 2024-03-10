@@ -1,2 +1,93 @@
+.App {
+  text-align: center;
+ }
+ body {
+  background-color: #ffe0e5;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: xx-large;
+ }
 
+ .main_container {
+  font-family: 'Poppins', Arial;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 20px; /* Add padding for better appearance */
+}
+.content{
+  flex: 1;
+}
+.graphics-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%; 
+}
 
+/* Additional styling for your graphics */
+.graphics-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+.feature {
+  display: flex;
+  align-items: center;
+  font-size: 16px; 
+  margin-bottom: 20px; /* Adjust as needed for spacing between features */
+}
+
+.feature img {
+  width: 140px; /* Adjust the image width as needed */
+  margin-right: 0px; /* Adjust as needed for spacing between image and text */
+}
+
+.feature p {
+  margin: 0px;
+}
+.slogan {
+  font-size: 16px; 
+  color: #f83c54;
+}
+
+ .thrift-heading {
+  font-size: 100px; 
+  font-weight: bold;
+  margin-bottom: -50px; /* Add margin for spacing */
+ }
+ .hundred-heading {
+  font-size: 100px; 
+  font-weight: bold;
+  margin-bottom: 20px; /* Add margin for spacing */
+ }
+
+ 
+ 
+ .button {
+  font-weight: bold;
+  border: none;
+  border-radius: 40px; /* Adjust the border-radius to make it more oval */
+  background-color: #f83c54; /* Set the background color to red */
+  color: white; /* Set the text color to contrast with the red background */
+  padding: 20px 30px; /* Adjust the padding for better appearance */
+  cursor: pointer; /* Add a pointer cursor for better user experience */
+ }
+ .button::before {
+  content: '\f023';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  margin-right: 8px; /* Adjust the spacing between text and icon */
+ }
+ .button:hover {
+  background-color: darkred; /* Change the background color on hover if desired */
+ }
+ .myElement {
+  font-weight: bold;
+  font-size: x-large;
+ }
+ 
+
+ 
+ 
+ 
