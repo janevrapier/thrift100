@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { redirect } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import App from './App';
+import './LogIn.css';
 
 
 const Login = (props) => {
@@ -24,7 +25,7 @@ const Login = (props) => {
         secure, campus-based online reselling
         </h2>
         <h1 className="mainTitle">THRFT100</h1>
-        <div>Enter your university email address</div>
+        <div className = "emailMessage"> Enter your university email address</div>
       </div>
       <br />
       <div className={'inputContainer'}>
@@ -38,12 +39,6 @@ const Login = (props) => {
       </div>
       <br />
       <div className={'inputContainer'}>
-        <input
-          value={password}
-          placeholder="Enter your password here"
-          onChange={(ev) => setPassword(ev.target.value)}
-          className={'inputBox'}
-        />
         <label className="errorLabel">{passwordError}</label>
       </div>
       <br />
