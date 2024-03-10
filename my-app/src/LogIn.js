@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { redirect } from "react-router-dom";
+import reportWebVitals from './reportWebVitals';
+import App from './App';
 
 
 const Login = (props) => {
@@ -18,13 +20,17 @@ const Login = (props) => {
   return (
     <div className={'mainContainer'}>
       <div className={'titleContainer'}>
-        <div>Login</div>
+      <h2 className = 'welcomeHeading'>
+        secure, campus-based online reselling
+        </h2>
+        <h1 className="mainTitle">THRFT100</h1>
+        <div>Enter your university email address</div>
       </div>
       <br />
       <div className={'inputContainer'}>
         <input
           value={email}
-          placeholder="Enter your email here"
+          placeholder="name@queensu.ca "
           onChange={(ev) => setEmail(ev.target.value)}
           className={'inputBox'}
         />
@@ -42,10 +48,10 @@ const Login = (props) => {
       </div>
       <br />
       <div className={'inputContainer'}>
-        <input className={'inputButton'} type="button" onClick={onButtonClick} value={'Log in'} />
+        <input className={'button'} type="button" onClick={onButtonClick} value={'Log in'} />
       </div>
 
-      <button onClick={() => {navigate('/')}}>Home</button>
+      <input className={'homeButton'} type="button" onClick={() => {navigate('/')}} value="Home" />
     </div>
   )
 }
